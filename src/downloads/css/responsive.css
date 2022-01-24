@@ -1,0 +1,229 @@
+/*
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    #chkToggle:checked+ul.main-nav {
+        display: flex;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .navbar-links {
+        margin-right: 40px;
+        color: var(--font-color);
+    }
+    .navbar .navbar-toggler {
+        outline: 0;
+    }
+    .navbar .logo {
+        margin-top: 0;
+        /*      display: none;*/
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .logo:hover, .navbar-links:hover {
+        color: var(--font-color);
+    }
+    .card-bg-txt {
+        font-size: 7.4vw;
+    }
+    .card-item:nth-child(2) {
+        display: none;
+    }
+    .follow-card {
+        max-width: 70%;
+    }
+    .header-text h1 {
+        font-size: 3rem;
+    }
+    .header-text h2 {
+        font-size: 1.5rem;
+    }
+    .header-text button {
+        margin-top: 10px;
+    }
+    .header-text img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media all and (max-width: 1024px) {}
+
+@media (max-width: 992px) {
+    .follow-card {
+        max-width: 90%;
+    }
+    .navbar .logo {
+        margin-top: 0;
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-title {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: auto;
+    }
+    .container-title:before {
+        content: "";
+        background-image: url(../images/icons/dots.svg);
+        display: block;
+        height: 37px;
+        left: 60px;
+        top: 25px;
+        position: absolute;
+        width: 37px;
+    }
+    .logo {
+        font-size: 1.1rem;
+    }
+    .follow-card {
+        max-width: 80%;
+    }
+    .header-text h1 {
+        font-size: 2rem;
+        margin-bottom: 3px;
+    }
+    .header-text b {
+        margin-bottom: 0px;
+        font-family: serif;
+    }
+    .header-text img {
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+        border-radius: 50%;
+    }
+    .home .social-icon i {
+        padding: 0px 5px;
+        font-size: 1.5rem;
+    }
+    .header-text button {
+        margin-top: 6px;
+        padding: 6px 20px;
+    }
+    .scroll-down {
+        margin-top: -30px;
+    }
+    .about-text h1 {
+        font-size: 1.8rem;
+    }
+    .about-text h3, about-text span {
+        font-size: 1.3rem;
+    }
+    .details {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        display: none;
+    }
+    .hire-text h1 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    .hire-text h5 {
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .hire-text button {
+        margin-top: 10px;
+        padding: 8px 20px;
+    }
+    .hireme {
+        text-align: center;
+        margin: auto;
+    }
+    .testimonial-box p {
+        text-align: justify;
+    }
+    .contact-card {
+        padding: 40px 0;
+    }
+    .follow-card {
+        padding: 10px;
+    }
+    .card-title .card-img {
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+    .card-text {
+        text-align: justify;
+        font-size: 15px;
+    }
+    .card-title-text h4, .card-title-text h6 {
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+        padding-top: 7px;
+        width: 100%;
+    }
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .contact-form .form-box {
+        padding: 0px;
+        width: 100%;
+        margin: auto;
+    }
+    .contact-form .form-box button {
+        margin-top: 17px;
+        padding: 8px 20px;
+    }
+    .contact-form .form-group {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar .navbar-collapse {
+        height: 100vh;
+        width: 100vw;
+        background: var(--background);
+        text-align: center;
+        padding: 30px 0 10px 0;
+        transition: .5s;
+    }
+    .navbar .nav-link {
+        color: var(--font-color);
+    }
+    .navbar .navbar-nav .nav-link {
+        color: var(--font-color);
+        font-size: 23px;
+        padding: 0;
+    }
+    .nav-scroll .navbar-collapse .nav-link {
+        color: var(--font-color) !important;
+    }
+}
